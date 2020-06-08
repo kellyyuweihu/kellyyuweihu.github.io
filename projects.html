@@ -4,64 +4,65 @@
 <head>
     <title>Kelly Hu | Projects</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<body>
+<body data-gr-c-s-loaded="true">
 
 
-        <div id="container">
-            <div id="header">
-                <h1>Hell:o, I'm Kelly</h1>
-                <h2>A Ux Designer</h2>
-            </div>
-            <nav class="my-nav">
-                <p class="border-right"><a href="index.html">Home</a></p>
-                <p class="border-right"><a href="projects.html">Projects</a></p>
-                <p><a href="contact.html">Contact</a></p>
-            </nav>
-            <div id="centerColumn">
-                <article>
-                    <h2>Smart Healthcare Website (2019)</h2>
-                    <p>Banner</p>
-                    <img src="banner.png">
-                    <p>Navigation Bar</p>
-                    <div class="img-con">
-                        <img class="img-item" src="navigation bar.png">
-
-                        <img class="img-item" src="homepage.png">
-                        <img class="img-item" src="homepage 2.png">
-                    </div>
-                    <br>
-                    <p><strong>Interface Designer. Assistant </strong> A short film about roommates wanting to go for
-                        the same
-                        acting audition.</p>
-                    <h2>Smart Healthcare App </h2>
-                    <p>Flowchart</p>
-                    <img src="flowchart.png">
-                    <p>Notification</p>
-                    <img src="notification.png">
-                    <p>My Profile</p>
-                    <img src="my profile.png">
-                </article>
-
-            </div>
+    <div id="container">
+        <div id="header">
+            <h1>Hell:o, I'm Kelly</h1>
+            <h2>A Ux Designer</h2>
         </div>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div id="centerColumn">
+            <article>
+                <h2>Smart Healthcare Website (2019)</h2>
+                <p>Banner</p>
+                <img src="banner.png">
+                <p>Navigation Bar</p>
+                <div class="img-con">
+                    <img class="img-item" src="navigation bar.png">
 
-        <div id="mask" class="mask" style="display: none">
-            <img id="preview" src="">
+                    <img class="img-item" src="homepage.png">
+                    <img class="img-item" src="homepage 2.png">
+                </div>
+                <br>
+                <p><strong>Interface Designer. Assistant </strong> A short film about roommates wanting to go for
+                    the same
+                    acting audition.</p>
+                <h2>Smart Healthcare App </h2>
+                <p>Flowchart</p>
+                <img src="flowchart.png">
+                <p>Notification</p>
+                <img src="notification.png">
+                <p>My Profile</p>
+                <img src="my profile.png">
+            </article>
+
         </div>
-    </body>
+    </div>
+
+    <div id="mask" class="mask" style="display: none">
+        <img id="preview" src="">
+    </div>
+</body>
 
 </html>
 <script>
     var img = document.querySelectorAll('.img-item')
     var previewImg = document.getElementById('preview')
     var mask = document.getElementById('mask')
-    for(var i = 0; i < img.length; i++) {
+    for (var i = 0; i < img.length; i++) {
         img[i].onclick = function (e) {
             e.stopPropagation()
             mask.style.display = 'block'
