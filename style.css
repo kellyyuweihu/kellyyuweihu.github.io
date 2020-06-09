@@ -1,5 +1,5 @@
 body {
-    margin: 20px;
+    margin: 0;
     padding: 0;
     height: 50%;
     background-color: rgba(50, 115, 220, 0.3);
@@ -12,6 +12,11 @@ body {
 ul {
     margin: 0 0 0 20px;
     list-style-type: disc;
+}
+
+.makeR {
+    max-width: 100%;
+    height: auto;
 }
 
 li {
